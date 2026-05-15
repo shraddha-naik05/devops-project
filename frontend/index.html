@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Microservices App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 DevOps Microservices App</h1>
+      <p class="subtitle">Built with Docker, Kubernetes & GitHub Actions</p>
+      <div id="statusBadge" class="badge checking">⏳ Checking API...</div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Add Item</h2>
+        <div class="input-row">
+          <input id="itemInput" type="text" placeholder="Enter item name..." maxlength="100" />
+          <button onclick="addItem()" id="addBtn">Add</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Items List <span id="count" class="count"></span></h2>
+        <div id="loading" class="loading">Loading...</div>
+        <ul id="itemList"></ul>
+        <p id="emptyMsg" class="empty" style="display:none">No items yet. Add one above!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>NIE – DevOps Project | Naik Shraddha & Namratha S | 6th Sem CSE-B</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
