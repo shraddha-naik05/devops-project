@@ -18,7 +18,7 @@ const ItemSchema = new mongoose.Schema({
 });
 const Item = mongoose.model('Item', ItemSchema);
 
-app.get('/', (req, res) => res.json({ status: 'Backend is running!', version: '2.0.0' }));
+app.get('/', (req, res) => res.json({ status: 'Backend is running!', version: '5.0.0' }));
 
 app.get('/health', (req, res) => res.json({ status: 'healthy' }));
 
